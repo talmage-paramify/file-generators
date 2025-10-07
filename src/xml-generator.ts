@@ -454,7 +454,7 @@ class XMLGenerator {
         break;
     }
 
-    const filePath = join(process.cwd(), 'app', config.filename);
+    const filePath = join(process.cwd(), 'generated', config.filename);
     writeFileSync(filePath, xmlContent, 'utf8');
 
     console.info(`XML file generated: ${filePath}`);
